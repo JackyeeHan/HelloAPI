@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		966784E2773735A6C7D2BFD2 /* Pods_HelloAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C166BA84E27E8A53109AA195 /* Pods_HelloAPI.framework */; };
 		E313697228670EAA00BB89FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E313697128670EAA00BB89FC /* AppDelegate.swift */; };
 		E313697428670EAA00BB89FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E313697328670EAA00BB89FC /* SceneDelegate.swift */; };
 		E313697628670EAA00BB89FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E313697528670EAA00BB89FC /* ViewController.swift */; };
 		E313697928670EAA00BB89FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E313697728670EAA00BB89FC /* Main.storyboard */; };
 		E313697B28670EAA00BB89FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E313697A28670EAA00BB89FC /* Assets.xcassets */; };
 		E313697E28670EAA00BB89FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E313697C28670EAA00BB89FC /* LaunchScreen.storyboard */; };
+		E3136986286710CB00BB89FC /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3136985286710CB00BB89FC /* APIModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13E0927B7DF1A49A95175A67 /* Pods-HelloAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAPI.debug.xcconfig"; path = "Target Support Files/Pods-HelloAPI/Pods-HelloAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		C166BA84E27E8A53109AA195 /* Pods_HelloAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C82C5AC9ECDB1E8CD3801303 /* Pods-HelloAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAPI.release.xcconfig"; path = "Target Support Files/Pods-HelloAPI/Pods-HelloAPI.release.xcconfig"; sourceTree = "<group>"; };
 		E313696E28670EAA00BB89FC /* HelloAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E313697128670EAA00BB89FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E313697328670EAA00BB89FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		E313697A28670EAA00BB89FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E313697D28670EAA00BB89FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E313697F28670EAA00BB89FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3136985286710CB00BB89FC /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966784E2773735A6C7D2BFD2 /* Pods_HelloAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		417DA6D6DCAB43A150C26BFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C166BA84E27E8A53109AA195 /* Pods_HelloAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BA087B5030A9A051CAC9FF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13E0927B7DF1A49A95175A67 /* Pods-HelloAPI.debug.xcconfig */,
+				C82C5AC9ECDB1E8CD3801303 /* Pods-HelloAPI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E313696528670EAA00BB89FC = {
 			isa = PBXGroup;
 			children = (
 				E313697028670EAA00BB89FC /* HelloAPI */,
 				E313696F28670EAA00BB89FC /* Products */,
+				8BA087B5030A9A051CAC9FF1 /* Pods */,
+				417DA6D6DCAB43A150C26BFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				E313697A28670EAA00BB89FC /* Assets.xcassets */,
 				E313697C28670EAA00BB89FC /* LaunchScreen.storyboard */,
 				E313697F28670EAA00BB89FC /* Info.plist */,
+				E3136985286710CB00BB89FC /* APIModel.swift */,
 			);
 			path = HelloAPI;
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E313698228670EAA00BB89FC /* Build configuration list for PBXNativeTarget "HelloAPI" */;
 			buildPhases = (
+				47E0745E3870876A63FE1FA2 /* [CP] Check Pods Manifest.lock */,
 				E313696A28670EAA00BB89FC /* Sources */,
 				E313696B28670EAA00BB89FC /* Frameworks */,
 				E313696C28670EAA00BB89FC /* Resources */,
+				317F2BEA1F804033548D05E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +162,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		317F2BEA1F804033548D05E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloAPI/Pods-HelloAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloAPI/Pods-HelloAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloAPI/Pods-HelloAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47E0745E3870876A63FE1FA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E313696A28670EAA00BB89FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3136986286710CB00BB89FC /* APIModel.swift in Sources */,
 				E313697628670EAA00BB89FC /* ViewController.swift in Sources */,
 				E313697228670EAA00BB89FC /* AppDelegate.swift in Sources */,
 				E313697428670EAA00BB89FC /* SceneDelegate.swift in Sources */,
@@ -282,6 +354,7 @@
 		};
 		E313698328670EAA00BB89FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13E0927B7DF1A49A95175A67 /* Pods-HelloAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +383,7 @@
 		};
 		E313698428670EAA00BB89FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C82C5AC9ECDB1E8CD3801303 /* Pods-HelloAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
