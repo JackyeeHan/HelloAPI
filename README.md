@@ -8,7 +8,7 @@
 
 ![image](https://github.com/JackyeeHan/HelloAPI/blob/main/Postman.png)
 
-3.程式碼以及畫面編輯完成後顯示以下畫面，按下Next按鈕則會取得下個人的資料
+3.程式碼以及畫面編輯完成後顯示以下畫面，按下Next按鈕則會取得隨機的用戶資料
 
 ![image](https://github.com/JackyeeHan/HelloAPI/blob/main/user-1.png)
 ![image](https://github.com/JackyeeHan/HelloAPI/blob/main/user-2.png)
