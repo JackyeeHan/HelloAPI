@@ -1,3 +1,3 @@
-# 用Alamofire取得隨機用戶資料
+# 用Alamofire取得 https://randomuser.me API資料
 
-先取得 https://randomuser.me/api 位址
+先取得API位址 https://randomuser.me/api
